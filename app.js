@@ -7,3 +7,7 @@ function addItem(item) {
 
 addItem("task1");
 console.log(shoppingList);
+
+function removeLastItem(item) {
+    shoppingList.pop(item);
+}
