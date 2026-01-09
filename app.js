@@ -1,14 +1,22 @@
 // Task1
 let shoppingList = [];
 
-function addItem(item) {
-    shoppingList.push(item);
+function addItem(newItem) {
+    for (let item of shoppingList){
+        if ( newItem === item) {
+            console.log("hey that item is a copy!");
+            return;
+        }
+    }
+    shoppingList.push(newItem);
 }
 
 addItem("task1");
+addItem("task1");
+
 addItem("task2");
 addItem("task3");
-// console.log(shoppingList);
+console.log(shoppingList);
 
 function removeLastItem() {
     shoppingList.pop();
