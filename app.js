@@ -1,5 +1,5 @@
 // Task1
-shoppingList = [];
+let shoppingList = [];
 
 function addItem(item) {
     shoppingList.push(item);
@@ -8,6 +8,6 @@ function addItem(item) {
 addItem("task1");
 console.log(shoppingList);
 
-function removeLastItem(item) {
-    shoppingList.pop(item);
+function removeLastItem() {
+    shoppingList.pop();
 }
