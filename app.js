@@ -5,7 +5,9 @@ function addItem(item) {
     shoppingList.push(item);
 }
 
-// addItem("task1");
+addItem("task1");
+addItem("task2");
+addItem("task3");
 // console.log(shoppingList);
 
 function removeLastItem() {
@@ -21,3 +23,5 @@ function displayList() {
         console.log('  '+item);
     }
 }
+
+displayList();
