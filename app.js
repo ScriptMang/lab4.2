@@ -11,3 +11,6 @@ console.log(shoppingList);
 function removeLastItem() {
     shoppingList.pop();
 }
+
+removeLastItem();
+console.log(shoppingList);
