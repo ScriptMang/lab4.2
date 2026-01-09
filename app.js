@@ -5,12 +5,19 @@ function addItem(item) {
     shoppingList.push(item);
 }
 
-addItem("task1");
-console.log(shoppingList);
+// addItem("task1");
+// console.log(shoppingList);
 
 function removeLastItem() {
     shoppingList.pop();
 }
 
-removeLastItem();
-console.log(shoppingList);
+// removeLastItem();
+// console.log(shoppingList);
+
+function displayList() {
+    console.log("shoppingList: ");
+    for(let item of shoppingList) {
+        console.log('  '+item);
+    }
+}
