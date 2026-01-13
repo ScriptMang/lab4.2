@@ -1,6 +1,17 @@
 // Task1
 let shoppingList = [];
 
+function filterItems(term) {
+    let searchRslt = [];
+    for (let item of shoppingList){
+        if ( term === item) {
+            searchRslt.push(term)
+        }
+    }
+    return searchRslt;
+}
+
+// Task2
 function addItem(newItem) {
     for (let item of shoppingList){
         if ( newItem === item) {
@@ -33,3 +44,4 @@ function displayList() {
 }
 
 displayList();
+console.log(filterItems('task1'));
