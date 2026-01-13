@@ -1,6 +1,7 @@
 // Task1
 let shoppingList = [];
 
+// Task2
 function filterItems(term) {
     let searchRslt = [];
     for (let item of shoppingList){
