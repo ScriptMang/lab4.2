@@ -30,6 +30,7 @@ addItem("task2");
 addItem("task3");
 console.log(shoppingList);
 
+// Task1
 function removeLastItem() {
     shoppingList.pop();
 }
@@ -37,6 +38,7 @@ function removeLastItem() {
 // removeLastItem();
 // console.log(shoppingList);
 
+// Task1
 function displayList() {
     console.log("shoppingList: ");
     for(let item of shoppingList) {
