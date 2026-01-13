@@ -5,8 +5,8 @@ let shoppingList = [];
 function filterItems(term) {
     let searchRslt = [];
     for (let item of shoppingList){
-        if ( term === item) {
-            searchRslt.push(term)
+        if ( item.includes(term)) {
+            searchRslt.push(item)
         }
     }
     return searchRslt;
@@ -47,4 +47,4 @@ function displayList() {
 }
 
 displayList();
-console.log(filterItems('task1'));
+console.log(`Search for all tasks with the keyword 'task': `+ filterItems('task'));
